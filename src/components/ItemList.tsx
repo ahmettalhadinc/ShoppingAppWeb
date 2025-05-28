@@ -1,6 +1,16 @@
+import { useDispatch } from "react-redux";
 import {  useNavigate } from "react-router-dom"
+import { AppDispatch } from "../redux/store";
+import { addToBasket } from "../redux/basketSlice";
+import toast from 'react-hot-toast'
+
 
 const ItemList = ({ product }: { product: any }) => {
+  const dispatch = useDispatch<AppDispatch>();
+const handleAddItem = () => {
+  dispatch(addToBasket(product));
+  toast.success("Ürün sepete eklendi!");
+};
   const navigate = useNavigate();
   const { title, price,   image ,id} = product
   return (
@@ -11,13 +21,23 @@ const ItemList = ({ product }: { product: any }) => {
 
         {title}
       </p>
-      <p className="text-center"> {price}</p>
+      <p className="text-center text-gray-500 font-extrabold text-xl"> ${price}</p>
+      <div className="flex space-x-3 ">
+
+     
       <button
         onClick={() => navigate("product/"+id)}
         className="border-2 border-green-500 p-3 rounded-xl mt-4 cursor-pointer hover:bg-green-500 hover:text-white hover:p-6 transition-colors duration-300 ease-in-out"
       >
-        Ürüne Git
+        Go to product
       </button>
+       <button
+        onClick={handleAddItem}
+        className="border-2 border-green-500 p-3 rounded-xl mt-4 cursor-pointer hover:bg-green-500 hover:text-white hover:p-6 transition-colors duration-300 ease-in-out"
+      >
+        Add to basket
+      </button> 
+      </div>
     </div>
   )
 }
