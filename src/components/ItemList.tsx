@@ -9,7 +9,7 @@ const ItemList = ({ product }: { product: any }) => {
   const dispatch = useDispatch<AppDispatch>();
 const handleAddItem = () => {
   dispatch(addToBasket(product));
-  toast.success("Ürün sepete eklendi!");
+  toast.success("Product added to basket!");
 };
   const navigate = useNavigate();
   const { title, price,   image ,id} = product

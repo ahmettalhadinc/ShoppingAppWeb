@@ -41,12 +41,12 @@ const BasketPage = () => {
             ))}
           </div>
           <div className="md:flex-2/5 flex items-center justify-center flex-col md:h-screen">
-          <h3 className="text-3xl mb-4 font-extrabold">Toplam Tutar: ${calculateTotalPrice()}</h3>
+          <h3 className="text-3xl mb-4 font-extrabold">Total Price: ${calculateTotalPrice()}</h3>
             <Link
               to="/success"
               className="border-2 border-green-500 p-5 font-serif hover:bg-green-500 hover:text-white cursor-pointer rounded-md hover:p-8 transition-all duration-300 ease-in-out"
             >
-              Alışverişi Tamamla  
+              Complete Shopping
             </Link>
           </div>
         </div>

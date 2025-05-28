@@ -13,7 +13,7 @@ const ProductIndex = () => {
   const handleAddItem = () => {
     if (product) {
       dispatch(addToBasket(product))
-      toast.success("Ürün Başarıyla Sepete Eklendi!")
+      toast.success("Product added to basket")
     }
   }
 

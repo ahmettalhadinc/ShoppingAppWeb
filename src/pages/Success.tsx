@@ -9,7 +9,7 @@ const Success = () => {
         <IoCheckmarkDoneSharp size={250} color="green"/> 
           <p className="text-5xl font-extrabold text-center">
 
-        Alışveriş Tamamlandı!
+       Shopping Completed
         </p>
         </div>
   )
