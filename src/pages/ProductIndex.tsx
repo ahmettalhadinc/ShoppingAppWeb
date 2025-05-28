@@ -34,7 +34,7 @@ const ProductIndex = () => {
         <p className="text-xl font-semibold mt-4 text-green-600">Price: {price} $</p>
 
         <button onClick={handleAddItem} className="mt-6 bg-green-700 text-white px-6 py-3 rounded-lg shadow-md hover:bg-green-600 transition-all duration-300 cursor-pointer">
-          Sepete Ekle
+          Add to basket
         </button>
       </div>
     </div>
