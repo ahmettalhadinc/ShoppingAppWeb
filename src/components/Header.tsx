@@ -11,7 +11,7 @@ console.log(itemsInBaskett)
             <div className="flex justify-between items-center p-5 bg-green-800  ">
 
                 <Link to="/">
-                <h1 className="ml-4 md:ml-30  font-extrabold text-2xl text-white ">Shopping App</h1>
+                <h1 className="ml-4 md:ml-30  font-extrabold text-2xl text-white ">Shoppinffffg App</h1>
                 </Link>
                 <Link to="/basket">
                 <div className="relative inline-flex    md:mr-30 " >
